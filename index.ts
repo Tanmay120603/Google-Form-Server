@@ -11,7 +11,7 @@ server.use(cors({ origin: '*' }));
 server.use(express.json());
 server.use('/api/form', FormRouter);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => {
     console.log(`Server started successfully on port ${PORT}`);
 });
